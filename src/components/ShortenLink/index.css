@@ -117,4 +117,8 @@
   .shorten--link__short {
     padding-bottom: 18px;
   }
+
+  .shorten--link__item-right.button {
+    border-radius: 10px;
+  }
 }
