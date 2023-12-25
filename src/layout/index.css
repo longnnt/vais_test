@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0;
+  padding: 0 170px;
+}
+
+.header__right {
+  display: flex;
+}
+
+.header__left {
+}
+
+.container {
+  display: flex;
+  margin-left: 170px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 152px;
+}
+
+.illustration-working {
+  position: relative;
+  left: 130px;
+}
+
+.footer {
+  background: var(--neutral-gray--darkviolet);
+  display: flex;
+  padding: 70px 170px 78px;
+}
+
+.footer__nav--list {
+  display: flex;
+  margin-left: 230px;
+  margin-right: 100px;
+}
+
+.footer__socials {
+  width: 168px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon__facebook:hover path,
+.icon__twitter:hover path,
+.icon__pinterest:hover path,
+.icon__insta:hover path {
+  fill: var(--primary-cyan);
+}
+
+.menu__bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  width: 24px;
+  height: 3px;
+  background: var(--neutral-gray);
+}
+
+@media only screen and (max-width: 376px) {
+  .header {
+    margin: 0;
+    padding: 0;
+    padding: 42px 28px;
+  }
+
+  .header__right {
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 56px 0;
+    align-items: center;
+  }
+
+  .footer__nav--list {
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__nav--item {
+    margin: 44px 0 0 0 !important;
+  }
+
+  .footer__socials {
+    margin-top: 52px;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .header__left {
+    display: none;
+  }
+
+  .menu__mobile {
+    display: none;
+    padding: 40px 24px;
+    background: #3a3053;
+    border-radius: 10px;
+    position: absolute;
+    width: 328px;
+    top: 48px;
+    right: -30px;
+    z-index: 900;
+    margin: 0 18px;
+    box-sizing: border-box;
+  }
+
+  .nav__mobile {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .nav__mobile-right {
+    border-top: 1px solid #544a6d;
+  }
+
+  .nav__mobile--text {
+    margin-top: 10px;
+  }
+
+  .menu__bar:hover + .menu__mobile {
+    display: block;
+  }
+
+  .header__left--mobile {
+    position: relative;
+  }
+}

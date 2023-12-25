@@ -1,0 +1,25 @@
+.navbar {
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__item {
+  color: var(--neutral-gray);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  user-select: none;
+}
+
+.navbar__item:hover {
+  color: var(--neutral-gray--darkviolet);
+}
+
+@media only screen and (max-width: 376px) {
+  .navbar {
+    display: none;
+  }
+}

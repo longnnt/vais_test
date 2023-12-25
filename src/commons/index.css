@@ -1,0 +1,31 @@
+.button {
+  border: none;
+  border-radius: 30px;
+  outline: 0;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: var(--primary-cyan);
+  user-select: none;
+  border-collapse: collapse;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button.copied {
+  background-color: var(--primary-dark--violet);
+}
+
+@media only screen and (max-width: 376px) {
+  .button {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}

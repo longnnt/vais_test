@@ -1,0 +1,36 @@
+.boost__your-links {
+  background-image: url("../../commons/svgs/bg-boost-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 66px 0;
+  background-color: var(--neutral-gray--darkblue);
+}
+
+.boost__your-links--header {
+  margin: 0 0 14px 0;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+
+@media only screen and (max-width: 376px) {
+  .boost__your-links {
+    background-image: url("../../commons/svgs/bg-boost-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: var(--neutral-gray--darkblue);
+  }
+
+  .boost__your-links .button {
+    width: unset;
+  }
+
+  .boost__your-links--header {
+    font-size: 26px;
+    padding: 0 38px;
+  }
+}

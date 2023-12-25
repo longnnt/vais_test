@@ -1,0 +1,30 @@
+.content {
+  width: 558px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86px;
+  color: var(--neutral-gray--darkviolet);
+}
+
+.description {
+  margin: 4px 0 40px 0;
+  font-size: 21px;
+  color: var(--neutral-gray);
+}
+
+@media only screen and (max-width: 376px) {
+  .content {
+    width: unset;
+    text-align: center;
+    padding: 0 32px;
+    margin-bottom: calc(85px + 168px);
+    padding-top: 44px;
+  }
+
+  .heading {
+    line-height: 52px;
+    font-size: 38px;
+  }
+}
